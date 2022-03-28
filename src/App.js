@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { Button, Spinner } from 'react-bootstrap';
 import './App.css';
+import CardGroup from './component/cardgroup/CardGroup';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+
+      <h1>react Boootatrap</h1>
+      <Button variant='danger'>My Button</Button>
+
+      <div>
+        <Spinner animation="border" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </Spinner>
+      </div>
+
+      <CardGroup></CardGroup>
+
     </div>
   );
 }
